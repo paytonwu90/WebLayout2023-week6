@@ -1,0 +1,26 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "position": (
+      property: position,
+      responsive: true,
+      values: static relative absolute fixed sticky
+    ),
+    "font-family": (
+      property: font-family,
+      class: font,
+      values: (
+        monospace: var(--#{$prefix}font-monospace),
+        NotoSansTC: $font-family-NotoSansTC,
+        NotoSerifTC: $font-family-NotoSerifTC
+      )
+    ),
+    "font-size": (
+      rfs: false,
+      property: font-size,
+      class: fs,
+      responsive: true,
+      values: $font-sizes
+    ),
+  )
+);

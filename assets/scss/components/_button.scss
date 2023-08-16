@@ -1,0 +1,24 @@
+.icon-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  &:hover .arrow-right {
+    transform: translateX(4px);
+  }
+  .arrow-right {
+    transition: transform .15s ease-in-out;
+  }
+}
+
+.btn-black {
+  $value: $black;
+  @include button-variant(
+    $value,
+    $value,
+    //$hover-background: tint-color($value, $btn-hover-bg-tint-amount),
+    $hover-border: tint-color($value, $btn-hover-border-tint-amount),
+    $hover-color: $primary,
+    $active-background: tint-color($value, $btn-active-bg-tint-amount),
+    $active-border: tint-color($value, $btn-active-border-tint-amount)
+  );
+}

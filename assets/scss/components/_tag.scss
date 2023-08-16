@@ -1,0 +1,18 @@
+.tag {
+  --tag-border-width: 1px;
+  --tag-stroke-width: 4px;
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  border: var(--tag-border-width) solid $black;
+  border-left-width: 4px;
+  padding: 4px 24px 4px calc(24px - var(--tag-stroke-width));
+  cursor: pointer;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+  
+  &:hover {
+    color: $white;
+    background-color: $black;
+    border-left-color: $primary;
+  }
+}
