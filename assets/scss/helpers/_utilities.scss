@@ -1,3 +1,6 @@
+.w-1px {
+  width: 1px !important;
+}
 .w-20px {
   width: 20px !important;
 }
@@ -10,12 +13,20 @@
 .w-42px {
   width: 42px !important;
 }
+.w-75px {
+  width: 75px !important;
+}
 .w-60 {
   width: 60% !important;
 }
 .w-lg-58px {
   @include media-breakpoint-up(lg) {
     width: 58px !important;
+  }
+}
+.w-lg-150px {
+  @include media-breakpoint-up(lg) {
+    width: 150px !important;
   }
 }
 .w-xl-80px {
@@ -40,9 +51,17 @@
 .h-42px {
   height: 42px !important;
 }
+.h-50px {
+  height: 50px !important;
+}
 .h-lg-58px {
   @include media-breakpoint-up(lg) {
     height: 58px !important;
+  }
+}
+.h-lg-75px {
+  @include media-breakpoint-up(lg) {
+    height: 75px !important;
   }
 }
 .h-xl-80px {
@@ -51,6 +70,10 @@
   }
 }
 
+// 因為會大量出現所以乾脆獨立一個 class
+.border-black-2 {
+  border: 2px solid $black !important;
+}
 .border-start-lg-0 {
   @include media-breakpoint-up(lg) {
     border-left: 0 !important;
@@ -70,4 +93,7 @@
 }
 .rotate-n2 {
   transform: rotate(-2deg) !important;
+}
+.rotate-30 {
+  transform: rotate(30deg) !important;
 }

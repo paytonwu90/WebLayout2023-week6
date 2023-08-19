@@ -22,3 +22,7 @@
     $active-border: tint-color($value, $btn-active-border-tint-amount)
   );
 }
+
+.btn-outline-black {
+  @include button-outline-variant($black, $primary);
+}
