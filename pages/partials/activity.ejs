@@ -10,9 +10,17 @@
       <img src="./../assets/images/sparkler.png" alt="sparkler-icon" class="w-20px h-20px me-1">
       <a href="#" class="hover-underline"><%=tag%></a>
     </div>
-    <a href="<%=title=='返老還童-制服聯誼' ? 'uniform-meetup.html':'#'%>" class="icon-link icon-link-hover gap-0 hover-circle">
-      <span class="me-1"><%=title=='返老還童-制服聯誼' ? '檢視活動':'開賣中'%></span>
-      <i class="icofont-rounded-double-right arrow-right bi"></i>
-    </a>
+    
+    <% if (title === '返老還童-制服聯誼') { %>
+      <a href="uniform-meetup.html" class="icon-link icon-link-hover gap-0 hover-circle">
+        <span class="me-1">檢視活動</span>
+        <i class="icofont-rounded-double-right arrow-right bi"></i>
+      </a>
+    <% } else { %>
+      <a href="#" class="icon-link icon-link-hover gap-0 hover-circle" data-bs-toggle="modal" data-bs-target="#joinMemberModal">
+        <span class="me-1">開賣中</span>
+        <i class="icofont-rounded-double-right arrow-right bi"></i>
+      </a>
+    <% } %>
   </div>
 </div>
