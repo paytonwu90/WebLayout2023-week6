@@ -70,6 +70,13 @@
   }
 }
 
+.mx-lg-n4 {
+  @include media-breakpoint-up(lg) {
+    margin-left: -16px !important;
+    margin-right: -16px !important;
+  }
+}
+
 // 因為會大量出現所以乾脆獨立一個 class
 .border-black-2 {
   border: 2px solid $black !important;

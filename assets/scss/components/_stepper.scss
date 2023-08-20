@@ -1,0 +1,49 @@
+.stepper {
+  --step-icon-container-width: 32px;
+  @include media-breakpoint-up(lg) {
+    --step-icon-container-width: 48px;
+  }
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: calc(var(--step-icon-container-width) / 2);
+    left: var(--step-icon-container-width);
+    right: var(--step-icon-container-width);
+    border-bottom: 1px solid $black;
+  }
+}
+
+.step {
+  position: relative;
+  text-align: center;
+
+  &-iconContainer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--step-icon-container-width);
+    height: var(--step-icon-container-width);
+    background-color: var(--#{$prefix}body-bg);
+    border: 1px solid $black;
+    @include media-breakpoint-up(lg) {
+      font-size: 20px;
+    }
+
+    .active & {
+      color: $primary;
+      background-color: $black;
+    }
+  }
+  &-label {
+    padding-top: 4px;
+    @include media-breakpoint-up(lg) {
+      padding-top: 8px;
+    }
+  }
+}
