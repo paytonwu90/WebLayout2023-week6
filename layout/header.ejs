@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg py-3 py-lg-6 border-bottom border-black border-2">
+<nav class="navbar navbar-expand-lg position-relative py-3 py-lg-6 border-bottom border-black border-2">
   <div class="container">
     <a class="d-flex align-items-center me-lg-11" href="./">
       <img src="./../assets/images/logo.png" alt="logo" class="w-42px w-lg-58px h-42px h-lg-58px me-lg-4">
@@ -12,9 +12,26 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNavbar" aria-controls="headerNavbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="headerNavbar">
-      <ul class="navbar-nav fs-8 pt-4 pt-lg-0">
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav fs-8">
         <li class="nav-item me-4">
+          <a class="nav-link" href="#">
+            <i class="icofont-ui-file me-1"></i><span>REGISTER</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">
+            <i class="icofont-ui-user me-1"></i><span>LOGIN</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- navbar for mobile -->
+  <div class="collapse position-absolute top-100 start-0 w-100 bg-body border-top border-bottom border-black border-2 z-1" id="headerNavbar">
+    <div class="container">
+      <ul class="navbar-nav fs-8 py-4 py-lg-0">
+        <li class="nav-item">
           <a class="nav-link" href="#">
             <i class="icofont-ui-file me-1"></i><span>REGISTER</span>
           </a>

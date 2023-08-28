@@ -24,16 +24,25 @@
   }
 }
 
-.hover-inner-translate {
+.hover-inner-scale {
+  transition: border .15s ease-in-out;
   * {
     transition: transform .15s ease-in-out;
   }
   &:hover {
+    border: 4px solid $black;
     :nth-child(1) {
-      transform: translateX(-8px);
+      transform: scale(0.9);
     }
     :nth-child(2) {
-      transform: translateX(8px);
+      transform: scale(1.1);
     }
+  }
+}
+
+.hover-border-primary-4 {
+  transition: border .15s ease-in-out;
+  &:hover {
+    border: 4px solid $primary;
   }
 }
